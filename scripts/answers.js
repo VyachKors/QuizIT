@@ -101,22 +101,18 @@
 
                     const isCorrect = this.answersTrue[i] === itemElementAnswers[j].id;
                     const isUserAnswer = this.chosenAnswerIdsArray.includes(itemElementAnswers[j].id);
-
-                    if (isUserAnswer) {
-                        if (isCorrect) {
-                            itemAnswersBlockElementCircle.classList.add('answer-item-circle-green');
-                            itemAnswersBlockElementText.classList.add('answer-item-text-green');
-                        } else {
-                            itemAnswersBlockElementCircle.classList.add('answer-item-circle-red');
-                            itemAnswersBlockElementText.classList.add('answer-item-text-red');
-                        }
-                    } else {
-                        itemAnswersBlockElementCircle.classList.add('answer-item-circle');
-                        itemAnswersBlockElementText.classList.add('answer-item-text');
-                    }
-                    if (isCorrect && !isUserAnswer) {
+                    // Если ответ пользователя и он правильный
+                    if (isUserAnswer && isCorrect) {
                         itemAnswersBlockElementCircle.classList.add('answer-item-circle-green');
                         itemAnswersBlockElementText.classList.add('answer-item-text-green');
+                    } else if (isUserAnswer && !isCorrect) {
+                        // Если ответ пользователя, но он неправильный
+                        itemAnswersBlockElementCircle.classList.add('answer-item-circle-red');
+                        itemAnswersBlockElementText.classList.add('answer-item-text-red');
+                    } else {
+                        // Если ответ не выбранный пользователем
+                        itemAnswersBlockElementCircle.classList.add('answer-item-circle');
+                        itemAnswersBlockElementText.classList.add('answer-item-text');
                     }
 
 
