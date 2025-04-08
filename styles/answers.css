@@ -77,18 +77,16 @@
     border: 3px solid #6933DC;
     text-align: center;
 }
+
 .answer-item-circle-green {
     width: 8px;
     height: 8px;
-    border-radius: 50%;
-    background-color: white;
     border: 6px solid #5FDC33;
 }
+
 .answer-item-circle-red {
     width: 8px;
     height: 8px;
-    border-radius: 50%;
-    background-color: white;
     border: 6px solid #DC3333;
 }
 
@@ -96,11 +94,13 @@
     font-size: 20px;
     padding-left: 13px;
 }
+
 .answer-item-text-green {
     font-size: 20px;
     padding-left: 13px;
     color: #5FDC33;
 }
+
 .answer-item-text-red {
     font-size: 20px;
     padding-left: 13px;
