@@ -85,6 +85,7 @@ background: #6933dc;
 
 .test-question-option label {
     cursor: pointer;
+    max-width: 90%;
 }
 
 .test-actions {
