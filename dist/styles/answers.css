@@ -1,0 +1,130 @@
+.answers {
+    padding-top: 20px;
+}
+
+.answers-pre-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.answers-pre-title-stay {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #dcdcf3;
+}
+
+.answers-pre-title-stay img {
+    padding-left: 15px;
+}
+
+.answers-pre-title-changeable {
+    font-size: 20px;
+    color: #6933dc;
+    padding-left: 15px;
+}
+
+.answers-title {
+    font-family: "MuseoSansCyrlBold", sans-serif;
+    font-size: 54px;
+    text-align: left;
+    margin: 0;
+    padding: 60px 0 10px 0;
+}
+
+.answers-title span {
+    color: #6933dc;
+}
+
+.answers-author {
+    font-size: 20px;
+}
+
+.answers-author span {
+    font-family: "MuseoSansCyrlBold", sans-serif;
+    color: #6933dc;
+}
+
+.answer {
+    padding-top: 60px;
+}
+
+.answer-title {
+    font-family: "MuseoSansCyrlBold", sans-serif;
+    font-size: 36px;
+}
+
+.answer-title span {
+    color: #6933dc;
+}
+
+.answer-items {
+    padding-top: 20px;
+}
+
+.answer-item {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.answer-item-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #6933DC;
+    text-align: center;
+}
+
+.answer-item-circle-green {
+    width: 8px;
+    height: 8px;
+    border: 6px solid #5FDC33;
+}
+
+.answer-item-circle-red {
+    width: 8px;
+    height: 8px;
+    border: 6px solid #DC3333;
+}
+
+.answer-item-text {
+    font-size: 20px;
+    padding-left: 13px;
+}
+
+.answer-item-text-green {
+    font-size: 20px;
+    padding-left: 13px;
+    color: #5FDC33;
+}
+
+.answer-item-text-red {
+    font-size: 20px;
+    padding-left: 13px;
+    color: #DC3333;
+}
+
+.back-to-results {
+    padding-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back-to-results a {
+    font-size: 17px;
+    color: #6933dc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-results a img {
+    padding-left: 13px;
+}
+
+.footer {
+    border: none;
+}
