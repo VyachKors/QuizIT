@@ -57,6 +57,7 @@ export class Choice {
         console.log(this.quizzes);
         const ChoiceOptionsElement = document.getElementById('choice-options');
         if (this.quizzes && this.quizzes.length > 0) {
+            ChoiceOptionsElement.innerHTML = "";
             this.quizzes.forEach(quiz => {
                 const that = this;
                 const choiceOptionElement = document.createElement('div');
@@ -82,7 +83,7 @@ export class Choice {
                 }
 
                 const choiceOptionImageElement = document.createElement('img');
-                choiceOptionImageElement.setAttribute('src', '/images/arrow.png');
+                choiceOptionImageElement.setAttribute('src', '../static/images/arrow.png');
                 choiceOptionImageElement.setAttribute('alt', 'стрелка');
 
                 choiceOptionArrowElement.appendChild(choiceOptionImageElement);

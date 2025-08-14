@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    entry: './src/components/app.js',
+    entry: './src/app.js',
     mode: "development",
     output: {
         filename: 'main.js',
@@ -18,8 +18,7 @@ module.exports = {
             patterns: [
                 {from: "templates", to: "templates"},
                 {from: "styles", to: "styles"},
-                {from: "static/fonts", to: "fonts"},
-                {from: "static/images", to: "images"},
+                {from: "static", to: "static"},
             ],
         }),
     ],
