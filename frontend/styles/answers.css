@@ -81,13 +81,19 @@
 .answer-item-circle-green {
     width: 8px;
     height: 8px;
+    border-radius: 50%;
+    background-color: white;
     border: 6px solid #5FDC33;
+    text-align: center;
 }
 
 .answer-item-circle-red {
     width: 8px;
     height: 8px;
+    border-radius: 50%;
+    background-color: white;
     border: 6px solid #DC3333;
+    text-align: center;
 }
 
 .answer-item-text {

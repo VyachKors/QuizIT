@@ -106,6 +106,7 @@ export class Form {
                         if (result.error || !result.user) {
                             throw new Error(result.message)
                         }
+
                     }
                 } catch (error) {
                     return console.log(error);
@@ -129,6 +130,7 @@ export class Form {
                         fullName: result.fullName,
                         userId: result.userId
                     })
+                    localStorage.setItem('userEmail', email);
                     location.href = '#/choice';
                 }
             } catch (error) {

@@ -13,8 +13,15 @@ export class Result {
         const userInfo = Auth.getUserInfo();
         if (!userInfo) {
             location.href = '#/';
+            return;
         }
-        if (this.routeParams.id) {
+        if (!this.routeParams.id){
+            location.href = '#/';
+            return;
+        }
+
+        this.bindAnswersLink(this.routeParams.id);
+
             try {
                 const result = await CustomHttp.request(config.host + '/tests/' + this.routeParams.id + '/result?userId=' + userInfo.userId);
 
@@ -28,7 +35,19 @@ export class Result {
             } catch (error) {
                 console.log(error);
             }
-        }
+
         location.href = '#/';
     }
+
+    bindAnswersLink(id) {
+        const link = document.getElementById('answers-link');
+        if (!link) return;
+
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            location.hash = '#/answers?id=' + id;
+        });
+
+}
 }

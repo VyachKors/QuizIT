@@ -54,7 +54,6 @@ export class Choice {
     }
 
     processQuizzes() {
-        console.log(this.quizzes);
         const ChoiceOptionsElement = document.getElementById('choice-options');
         if (this.quizzes && this.quizzes.length > 0) {
             ChoiceOptionsElement.innerHTML = "";
